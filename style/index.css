@@ -79,6 +79,13 @@ p{
 .raw{
     width: 31px;
 }
+.text{
+  text-align: justify ;
+}
+.text:after {
+  content: "";
+  display: inline-block;
+}
 @media (max-width:914px) {
     .carousel__item.active{
         flex-direction: column;
