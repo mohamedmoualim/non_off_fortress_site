@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/index.css" rel="stylesheet" type="text/css">
+      
+    <title>FortressBoxes Home Page</title>
+</head>
+<body>
+    <!-- navbar begin menu.js(change carousel in js by the first div after navbar) toggle.js-->
+    <link href="./style/navbar.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./script/toggle.js"></script>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html"><img class="logo-pic" src="./image/logo.svg" alt="FortressBoxes Logo"></a>
+        </div>
+        <div class="logo2">
+            <a href="./index.html"><img class="logo-pic" src="./image/logo2.svg" alt="FortressBoxes Logo"></a>
+        </div>
+        <ul class="nav-links" style="padding: 0 30px;">
+            <!-- USING CHECKBOX HACK -->
+            <input class="hum" type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger" style="color:white">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li class="services">
+                    <a class="services-link" href="#" onclick="toggleDropdown(this); return false;">Services</a>
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown">
+                        <li><a style="font-size: 13px;" href="./Blockchain.html">Blockchain Audit</a></li>
+                        <li><a style="font-size: 13px;">PenTest</a></li>
+                        <li><a style="font-size: 13px;">Web Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Project.html">Project</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </div>
+        </ul>
+        <div class="button">
+            <img class="button-icon" src="./image/next.svg">
+            <a class="button-c" href="to-mail:contact@fortressboxes.tech">Book a meet</a>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    
+    <!-- Carousel Start -->
+    <div class="carousel">
+        <h1 style="text-align: center;margin-bottom: 10px;color: white;">Our Services</h1>
+        <div class="carousel__inner">
+            <div class="carousel__item active" >
+                <div class="pic-1">
+                    <img class="pic-1-content" src="./image/blockchain.svg" alt="FortressBoxes blockchain audit">
+                </div>
+                <div class="content-1">
+                    <h2 class="title">Blockchain audit</h2>
+                    <p class="text">Are you preparing to launch your Solidity smart contract but want to thoroughly review it before deployment?<br>
+                    At Fortress Boxes, we are dedicated to ensuring the security of decentralized projects.<br>
+                    With the increasing frequency of security breaches, it's crucial to protect your project and community.<br>
+                    Our team of experienced developers and researchers will provide a comprehensive audit report, complete with identified errors and recommended solutions.<br><br>
+                    <b class="end" style="font-size: 17px;">Trust us to safeguard your project - contact us today to schedule an audit.</b></p>
+                </div>
+            </div>
+            <div class="lopp carousel__item" >
+                <div class="content-1">
+                    <h2 class="title">Penetration Testing</h2>
+                    <p class="text">
+                    At Fortress Boxes, we are dedicated to ensure the security and compliance of your organization's IT environment with our comprehensive assessment services.<br>
+                    Our team of experts will review your IT configuration, policies, processes, and procedures related to your business, and conduct a thorough penetration testing of your system to identify vulnerabilities.<br><br>
+
+                    <b class="end" style="font-size: 17px;">Trust us to keep your IT environment secure - contact us today to schedule your assessment.</b>
+                    </p>
+                </div>
+                <div class="pic-1">
+                    <img class="pic-1-content" src="./image/Pentest.svg" alt="FortressBoxes Penetration Testing">
+                </div>
+            </div>
+            <div class="carousel__item" >
+                <div class="pic-1">
+                    <img class="pic-1-content" src="./image/webdev.svg" alt="FortressBoxes Web Developement">
+                </div>
+                <div class="content-1">
+                    <h2 class="title">Web Development</h2>
+                    <p class="text">
+                        If you're planning to create a website or web application, you'll need a team of skilled developers who can bring your vision to life.<br> 
+                        We stay up-to-date to ensure that your web application is secure, efficient, and optimized for performance.<br>
+                        We offer end-to-end web development services that include design, development, testing, deployment, and maintenance.<br>
+                        Our team will work closely with you to understand your business requirements and create a web solution tailored to your needs.
+                        Count on us to help you build a web application that provides a seamless user experience while ensuring scalability and security.<br><br>
+
+                        <b class="end" style="font-size: 17px;">Get in touch with us today to discuss your web development project.</b>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="carousel__item" >
+                <h2>Slide 4</h2>
+            </div>
+            <div class="carousel__item" >
+                <h2>Slide 5</h2>
+            </div> -->
+        </div>
+        <button class="carousel__button carousel__button--left"><img class="raw" src="./image/prev.svg"></button>
+        <button class="carousel__button carousel__button--right"><img class="raw" src="./image/next.svg"></button>
+    </div>
+    <!-- Carousel End -->
+    <script type="text/javascript" src="./script/carouselle.js"></script>
+    <script type="text/javascript" src="./script/menu.js"></script> 
+</body>
+</html>

@@ -1,0 +1,280 @@
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes AnimationName {
+    0%{background-position: 90% 100%}
+    10%{background-position:85% 90%}
+    20%{background-position:80% 85%}
+    30%{background-position:75% 80%}
+    40%{background-position:70% 75%}
+    50%{background-position:65% 70%}
+    60%{background-position:60% 65%}
+    70%{background-position:50% 60%}
+    80%{background-position:40% 50%}
+    90%{background-position:20% 40%}
+    100%{background-position:10% 15%}
+}
+body{
+    background-color: #31034e;
+    padding: 0;
+    margin:0;
+    font-family: "Open Sans", sans-serif;
+}
+.logo2{
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    
+}
+/* navbar BEGIN */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    width: 100%;
+    background-color: #31034e;
+    height:80px;
+    box-shadow: 0px 3px 6px -1px rgba(32,2,51,0.75);
+    -webkit-box-shadow: 0px 3px 6px -1px rgba(32,2,51,0.75);
+    -moz-box-shadow: 0px 3px 6px -1px rgba(32,2,51,0.75);
+}
+.logo{
+    padding: 0px 0px 0px 25px;
+}
+.logo-pic{
+    height:65px;
+}       
+.nav-links a {
+    color: white;
+}
+.hum{
+    display: none;    
+} 
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    box-shadow: 0px -2px 0px 0px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 0px -2px 0px 0px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 0px -2px 0px 0px rgba(0,0,0,1) inset;
+    transition: all 0.5s;
+}
+.menu li a {
+    transition: all 1s;
+    padding: 5px 0px;
+}
+.menu li {
+    padding: 5px 7px;
+    font-size: 17px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+.dropdown {
+    margin-top: 5px;
+    background-color: rgba(23, 12, 26, 0.667);
+    padding: 0em 0;
+    position:absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 5px;
+    top: 35px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: transparent;
+    background-color: rgba(255, 253, 253, 0.5);
+    border-radius: 2px;
+}
+
+.dropdown li a:hover{
+    box-shadow :unset;
+    -webkit-box-shadow :unset;
+    -moz-box-shadow :unset;
+}
+
+.services.active .dropdown {
+    display: block;
+} 
+.services.active .services-link{
+    box-shadow: 0px -2px 0px 0px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 0px -2px 0px 0px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 0px -2px 0px 0px rgba(0,0,0,1) inset;
+}
+.button{
+    display: flex;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.289);
+    transition: all 1s;
+    margin: 0px 3% 0px 0px;
+    border-radius: -15px;
+    box-shadow: inset 0 0 0 0 #4057ef;
+    /* transition: ease-out 1s, border 0.4s; */
+}
+.button:hover{
+    /* transition: ease-out 1s, border 0.5s; */
+    border-radius: 15px;
+    box-shadow: inset 400px 0 0 0 #4057ef;
+
+}
+.button:hover .button-icon{
+    border-radius: 15px;
+    animation: unset;
+}
+.button-c{
+    text-align: center;
+    color: white;
+    padding: 9px;
+    text-decoration: none;
+}
+.button-icon{
+    background-color: #4057ef;
+    border-radius: 40px;
+    padding: 9px;
+    width: 19px;
+    animation: heartbeat 1s ease-in-out infinite both;
+}
+
+/*HAMBURGER MENU*/     
+
+    
+    /* APPLYING MEDIA QUERIES */
+    
+@media (max-width: 965px)  {
+    .button{
+        display: none;
+    }
+    .button-c{
+        display: none;
+    }
+    .menu {
+        margin-top: 25px;
+        display:none;
+        position: absolute;
+        background-color:rgba(96, 95, 95, 0.415);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        box-shadow :unset;
+        -webkit-box-shadow :unset;
+        -moz-box-shadow :unset;
+    }
+
+    .menu li + li {
+        margin-top: 10px;
+    }
+
+    .hum:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        transition: all ease 0.5s;
+    }
+    .hum:checked ~ .hamburger{
+        transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transition: all ease 0.5s;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%) translateY(-12%);
+    }
+
+    .dropdown li:hover {
+        background-color: rgba(247, 247, 247, 0.589);;
+    }
+}
+/* navbar END */
+@media (max-width: 500px){
+    .button{
+        display: none;
+        all : unset;
+    }
+    .button-c{
+        display: none;
+    }
+    .hum:checked .navbar {
+        margin-bottom: 400px;
+    }
+    .dropdown {
+        transform: translateX(-47%) translateY(-10%);
+        background-color: rgba(23, 12, 26, 0.667);
+        position: relative;
+        width: 170px;
+        margin-bottom: 5px;
+    }
+    .dropdown a{
+        color: white;
+    }
+    .logo2{
+        display: unset;
+        padding: 0 0 0 10px;
+    }
+    .logo{
+        display:none;
+    }
+}
