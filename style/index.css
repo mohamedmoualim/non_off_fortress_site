@@ -89,7 +89,7 @@ p{
 .card_cont{
   display: flex;
   justify-content: center;
-  margin: 2%;
+  margin: 3%;
 }
 .card{
   margin: 20px;
@@ -185,4 +185,4 @@ p{
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
   }
-}az 
+}
