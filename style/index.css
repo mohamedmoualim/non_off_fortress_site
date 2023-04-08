@@ -73,7 +73,7 @@ p{
     margin: 0 10px;
 }
 .pic-1-content{
-    width: 300px;
+    width: 330px;
     display: block;
 }
 .raw{
@@ -85,6 +85,45 @@ p{
 .text:after {
   content: "";
   display: inline-block;
+}
+.card_cont{
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+.card{
+  margin: 20px;
+  border-radius: 15px;
+  width: 266px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #264fe5de;
+  transition: all 1s;
+}
+.card:hover{
+  transition: all 0.5s;
+  height: 260px;
+  background-color: #3378f7;
+  box-shadow: 0px 0px 45px 6px rgba(0, 0, 0, 0.6);
+-webkit-box-shadow: 0px 0px 45px 6px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 45px 6px rgba(0,0,0,0.6);
+}
+.card:hover .card_text{
+  display: unset;
+}
+.card_pic{
+  width: 100px;
+  margin: 0px auto;
+}
+.card_title{
+  margin: 0px auto;
+}
+.card_text{
+  display: none;
+  color: rgb(142, 141, 141);
+  margin: -19px auto;
 }
 @media (max-width:914px) {
     .carousel__item.active{
@@ -123,4 +162,27 @@ p{
     .carousel__item {
         height: 300px;
     }
+    .card_cont{
+      display: wrap;
+    }
+    .card{
+      width: 215px;
+      height: 225px;
+    }
+    
 }
+@media (max-width:660px) {
+  .card_cont{
+      display: grid !important;
+    }
+  .card_text{
+    display: unset;
+  }
+  .card:hover{
+    height: 225px;
+    background-color: #264fe5de;
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+  }
+}az 
