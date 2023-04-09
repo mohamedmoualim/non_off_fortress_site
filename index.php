@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style/index.css" rel="stylesheet" type="text/css">
-      
+    <link href="./image/logo2.svg" rel="shortcut icon" type="image/x-icon">
     <title>FortressBoxes Home Page</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
     <script type="text/javascript" src="./script/toggle.js"></script>
     <nav class="navbar">
         <div class="logo">
-            <a href="./index.html"><img class="logo-pic" src="./image/logo.svg" alt="FortressBoxes Logo"></a>
+            <a href="./index.php"><img class="logo-pic" src="./image/logo.svg" alt="FortressBoxes Logo"></a>
         </div>
         <div class="logo2">
-            <a href="./index.html"><img class="logo-pic" src="./image/logo2.svg" alt="FortressBoxes Logo"></a>
+            <a href="./index.php"><img class="logo-pic" src="./image/logo2.svg" alt="FortressBoxes Logo"></a>
         </div>
         <ul class="nav-links" style="padding: 0 30px;">
             <!-- USING CHECKBOX HACK -->
@@ -25,19 +25,19 @@
             <label for="checkbox_toggle" class="hamburger" style="color:white">&#9776;</label>
             <!-- NAVIGATION MENUS -->
             <div class="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="">About Us</a></li>
                 <li class="services">
                     <a class="services-link" href="#" onclick="toggleDropdown(this); return false;">Services</a>
                     <!-- DROPDOWN MENU -->
                     <ul class="dropdown">
-                        <li><a style="font-size: 13px;" href="./Blockchain.html">Blockchain Audit</a></li>
-                        <li><a style="font-size: 13px;">PenTest</a></li>
-                        <li><a style="font-size: 13px;">Web Development</a></li>
+                        <li><a style="font-size: 13px;" href="">Blockchain Audit</a></li>
+                        <li><a style="font-size: 13px;" href="">PenTest</a></li>
+                        <li><a style="font-size: 13px;" href="">Web Development</a></li>
                     </ul>
                 </li>
-                <li><a href="./Project.html">Project</a></li>
-                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Contact</a></li>
             </div>
         </ul>
         <div class="button">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card_pic" src="./image/pentest_card.svg" alt="Penetration testing service">
+                <img class="card_pic" src="./image/webdev_card.svg" alt="Web development service">
                 <div class="card_title">
                     <h4>Web Development</h4>
                 </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card_pic" src="./image/pentest_card.svg" alt="Penetration testing service">
+                <img class="card_pic" src="./image/blockchain_card.svg" alt="Blockchain audit service">
                 <div class="card_title">
                     <h4>Blockchain Audit</h4>
                 </div>
@@ -187,7 +187,7 @@
     <link href="./style/footer.css" rel="stylesheet" type="text/css">
     <div class="footer">
         <div class="footer-wrapper">
-            <a href="./index.html" class="footer-brand inline-block"><img src="./image/logo2.svg" loading="lazy" width="100" alt="FortressBoxes Logo" class="footer-logo"/></a>
+            <a href="./index.php" class="footer-brand inline-block"><img src="./image/logo2.svg" loading="lazy" width="100" alt="FortressBoxes Logo" class="footer-logo"/></a>
             <div class="footer-content">
                 <div class="footer-block">
                     <div class="title-small">Company</div>

@@ -7,7 +7,7 @@
         $to="contact@fortressboxes.tech";
         $subject="Contact Us Form";
         $header="From:".$email;
-        $done=send_mail($email,$name,$subject,$message)
+        $done=send_mail($to,$name,$subject,"from : ".$email." .\n".$message);
         if($done){header('location:./index.php?res=1#contact');}
         else{header('location:./index.php?res=2#contact');}
     }
