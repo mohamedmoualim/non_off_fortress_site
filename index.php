@@ -134,7 +134,7 @@
     </div>
     <!-- services end -->
     <!-- contact us form start -->
-    <div class="container" id="contact">
+    <div class="container" >
         <div class="content">
             <div class="left-side">
                 <div class="address details">
@@ -156,7 +156,7 @@
                     <div class="text-two">mohamed.moualim@fortressboxes.tech</div>
                 </div>
             </div>
-            <div class="right-side">
+            <div class="right-side" id="contact">
                 <div class="topic-text">Send us a message</div>
                 <p style="color:white;">Fill out the form below and our team will reach out you soon.</p>
                 <form action="./contact_us.php" method="post">
