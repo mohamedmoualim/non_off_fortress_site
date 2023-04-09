@@ -101,7 +101,7 @@
     <!-- Carousel End -->
     <!-- services start -->
     <div>
-        <h1 style="text-align: center;margin-bottom: 10px;color: rgb(2 167 245);">Our Services</h1>
+        <h1 style="text-align: center;margin-bottom: 10px;color: #d295f8;">Our Services</h1>
         <div class="card_cont">
             <div class="card">
                 <img class="card_pic" src="./image/pentest_card.svg" alt="Penetration testing service">
