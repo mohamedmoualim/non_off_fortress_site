@@ -134,7 +134,7 @@
     </div>
     <!-- services end -->
     <!-- contact us form start -->
-    <div class="container">
+    <div class="container" id="contact">
         <div class="content">
             <div class="left-side">
                 <div class="address details">
@@ -159,16 +159,22 @@
             <div class="right-side">
                 <div class="topic-text">Send us a message</div>
                 <p style="color:white;">Fill out the form below and our team will reach out you soon.</p>
-                <form action="" method="post">
+                <form action="./contact_us.php" method="post">
                     <div class="input-box">
-                        <input type="text" placeholder="Your name" required>
+                        <input type="text" name="name" placeholder="Your name" required>
                     </div>
                     <div class="input-box">
-                        <input type="email" placeholder="Your email" required>
+                        <input type="email" name="email" placeholder="Your email" required>
                     </div>
                     <div class="input-box message-box">
-                        <textarea type="text" placeholder="Enter Description" required></textarea>
+                        <textarea type="text" name="message" placeholder="Enter Description" required></textarea>
                     </div>
+                    <?php 
+                        if(isset($_GET['res'])){
+                            if($_GET['res']==1){echo '<p style="text-align:center;color:#8ae48a;">Sent successfully</p>';}
+                            if($_GET['res']==2){echo '<p style="text-align:center;color:#c70d2d;">Try Again !</p>';}  
+                        }
+                    ?>
                     <div class="button">
                         <input type="submit" value="Send Now" >
                     </div>
