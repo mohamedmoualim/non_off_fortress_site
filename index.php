@@ -118,7 +118,7 @@
                     <h4>Web Development</h4>
                 </div>
                 <div class="card_text">
-                    <p>bonjour tout le monde</p>
+                    <p>Expert development. <br>Customized solutions. <br>Enhance security. <br>Stay ahead of threats.</p>
                 </div>
             </div>
             <div class="card">
@@ -127,7 +127,7 @@
                     <h4>Blockchain Audit</h4>
                 </div>
                 <div class="card_text">
-                    <p>bonjour tout le monde</p>
+                    <p>Comprehensive auditing. <br>Identify vulnerabilities. <br>Enhance security. <br>Trust our expertise.</p>
                 </div>
             </div>
         </div>
