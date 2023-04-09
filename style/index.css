@@ -113,16 +113,22 @@ p{
 .card:hover .card_text{
   display: unset;
 }
+.card:hover .card_title{
+  transition: all 1s;
+  color:#6d0a75 !important;
+}
 .card_pic{
   width: 100px;
   margin: 0px auto;
 }
 .card_title{
+  transition: all 1s;
   margin: 0px auto;
 }
 .card_text{
+  text-align: center;
   display: none;
-  color: rgb(142, 141, 141);
+  color: rgb(146, 156, 91);
   margin: -19px auto;
 }
 @media (max-width:914px) {
